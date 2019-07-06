@@ -5,15 +5,15 @@ import java.util.ArrayList;
 public class Hangar {
 
 	public static void main(String[] args) {
-		// nouvelles instances
 		
+		// nouvelles instances
 		Car opel = new Car ("Opel");
 		Car ford = new Car ("Ford");
 		Boat titanic = new Boat ("Titanic");
 		Boat france = new Boat ("France");
 		
 	
-    	// il est possible de les stocker dans une mÃªme ArrayList
+    	// array list de tous les véhicules
     	ArrayList<Vehicle> vehiclesList = new ArrayList<>();
     	vehiclesList.add(opel);
     	vehiclesList.add(ford);
@@ -22,8 +22,8 @@ public class Hangar {
     	
     	// parcours de la liste
     	for (Vehicle vehicle : vehiclesList) {
-    		System.out.println("Je suis " + vehicle.getBrand() + " et je fais " + vehicle.doStuff());
-    
+    		// System.out.println("Je suis " + vehicle.getBrand() + " et je fais " + vehicle.doStuff());
+    		System.out.println(vehicle.doStuff());
     	}
 	}
 

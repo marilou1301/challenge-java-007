@@ -8,7 +8,8 @@ public class Car extends Vehicle {
 	
 	@Override
     public String doStuff() {
-        return "vroum vroum!";
+        //return "vroum vroum!";
+		return "Je suis " + getBrand() + " et je fais vroum vroum";
 	}
 	
 }
